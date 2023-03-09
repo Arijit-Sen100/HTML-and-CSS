@@ -1,0 +1,98 @@
+body{
+    height: 100vh;
+    /* width: 100%; */
+    background-color: aquamarine;
+}
+h1{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div p{
+    display: flex;
+    justify-content: center;
+}
+.laptop,
+.large,
+.mobile,
+.tablet{
+    display: none;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* media query using max-width */
+
+@media screen and (max-width:1440px) {
+    body{
+        background-color: forestgreen;
+    }
+    .laptop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+    .large{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1024px) {
+    body{
+        background-color: darkgoldenrod;
+    }
+    .laptop{
+        display: flex;
+        justify-content: center;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+    .large{
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        background-color: aqua;
+    }
+    .laptop{
+        display: none;
+    }
+    .tablet{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile{
+        display: none;
+    }
+    .large{
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        background-color: crimson;
+    }
+    .laptop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .large{
+        display: none;
+    }
+}
